@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+@theme {
+  /* Neutrals */
+  --color-bg: #FFFFFF;
+  --color-surface: #FAF8F2;
+  --color-bg-warm: #FBF8F2;
+  --color-ink: #1A1F2E;
+  --color-muted: #4A5568;
+  --color-subtle: #8B95A7;
+  --color-border: #E5E2DC;
+  --color-border-strong: #C5BDB0;
+
+  /* Brand accent */
+  --color-accent: #2D6A6F;
+  --color-accent-hover: #1F4E52;
+  --color-accent-soft: #E6EEEE;
+
+  /* Poster palette */
+  --color-poster-teal: #3F8E7E;
+  --color-poster-coral: #E88B70;
+  --color-poster-peach: #F4C7A8;
+  --color-poster-pink: #F0B7C8;
+  --color-poster-sage: #B5D4B1;
+  --color-poster-sky: #B8D4E3;
+
+  /* Fonts */
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-body: "Inter Variable", system-ui, -apple-system, sans-serif;
+  --font-accent: "Caveat", "Bradley Hand", cursive;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
