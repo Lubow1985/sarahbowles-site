@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with Sarah Bowles, Trainee Clinical Psychologist."
+  pathname="/contact"
+>
+  <PageHero title="Contact" />
+
+  <div class="max-w-5xl mx-auto px-6 md:px-8 py-16 md:py-24">
+    <div class="max-w-prose space-y-8">
+      <p class="font-body text-base md:text-lg text-muted leading-relaxed">
+        The best way to reach Sarah is by email.
+      </p>
+
+      <a
+        href="mailto:sb2144@canterbury.ac.uk"
+        class="block font-display font-semibold text-3xl text-accent hover:text-accent-hover transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      >
+        sb2144@canterbury.ac.uk
+      </a>
+
+      <p class="font-body text-base md:text-lg text-muted leading-relaxed">
+        Sarah typically responds within a few working days.
+      </p>
+
+      <p class="font-body text-sm text-subtle leading-relaxed border-t border-border pt-8">
+        For matters relating to the Growth-Oriented Practice in Psychosis study, the same email
+        applies. Concerns about the conduct of the study can be raised with Sarah's primary
+        supervisor, Dr Anne Cooke, at{' '}
+        <a
+          href="mailto:anne.cooke@canterbury.ac.uk"
+          class="text-muted underline underline-offset-2 hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          anne.cooke@canterbury.ac.uk
+        </a>
+        .
+      </p>
+    </div>
+  </div>
+</BaseLayout>

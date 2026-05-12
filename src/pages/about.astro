@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import PullQuote from '../components/PullQuote.astro';
+import Prose from '../components/Prose.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Sarah Bowles is a Trainee Clinical Psychologist whose path into the field started with economics, teaching, and counselling in London and Hong Kong."
+  pathname="/about"
+>
+  <PageHero
+    title="About"
+    eyebrow="Sarah Bowles, Trainee Clinical Psychologist"
+  />
+
+  <div class="max-w-5xl mx-auto px-6 md:px-8 py-16 md:py-24">
+    <div class="max-w-3xl space-y-16">
+
+      <PullQuote text='"I wanted to contribute to more systemic change in mental health."' />
+
+      <Prose>
+        <p>
+          I'm a Trainee Clinical Psychologist in the final year of the Doctoral Programme in
+          Clinical Psychology at the Salomons Institute for Applied Psychology, Canterbury Christ
+          Church University. My doctoral research focuses on how mental health professionals can
+          recognise and support growth following psychosis, exploring how clinicians understand
+          growth, what they do to facilitate it, and how this might shape clinical practice.
+        </p>
+        <p>
+          My path into clinical psychology was anything but linear, and that route has shaped how I
+          think about what good mental health practice looks like.
+        </p>
+        <p>
+          I first trained as an economist at the London School of Economics, drawn to the subject
+          because I wanted to understand how to solve social problems. The further I went, the more
+          I realised I wanted to work with people directly, so I trained as a teacher and spent
+          several years teaching economics in London, where I became a pastoral form tutor and
+          developed an emotional resilience programme for the school curriculum.
+        </p>
+        <p>
+          Teaching brought me close to young people's emotional lives, and I realised that this was
+          where my real interest lay. I retrained in psychology with an MSc at Kingston University,
+          then completed an MA in Relationship Therapy through Relate and Hull University. Through
+          this period I worked across a range of settings: as a counsellor at Relate providing
+          individual, couple and family therapy; as a pastoral support worker in a London
+          comprehensive; and as an assistant psychologist with the Complex Needs Outreach Team at
+          the Tavistock and Portman NHS Foundation Trust and at the Brandon Centre.
+        </p>
+        <p>
+          I later moved to Hong Kong, where I worked at{' '}
+          <a
+            href="https://www.sjccs.hk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            St John's Cathedral Counselling Service
+          </a>
+          , one of the city's largest mental health NGOs. After returning to the UK and having my
+          daughter, I wanted to contribute to more systemic change in mental health, and this is
+          what led me to apply for the Doctorate in Clinical Psychology.
+        </p>
+      </Prose>
+
+      <section aria-labelledby="education-heading">
+        <SectionHeading title="Education" />
+        <div class="mt-8 space-y-8">
+          <div>
+            <p class="font-body font-medium text-base text-ink">Doctorate in Clinical Psychology (in progress)</p>
+            <p class="font-body text-base text-muted mt-1">Salomons Institute for Applied Psychology, Canterbury Christ Church University</p>
+          </div>
+          <div>
+            <p class="font-body font-medium text-base text-ink">MA Relationship Therapy (Distinction)</p>
+            <p class="font-body text-base text-muted mt-1">Relate, validated by Hull University, accredited by BACP</p>
+          </div>
+          <div>
+            <p class="font-body font-medium text-base text-ink">MSc Psychology (Distinction, with scholarship for academic excellence)</p>
+            <p class="font-body text-base text-muted mt-1">Kingston University, BPS-accredited</p>
+          </div>
+          <div>
+            <p class="font-body font-medium text-base text-ink">BSc Economics (First Class Honours, prize for outstanding academic merit)</p>
+            <p class="font-body text-base text-muted mt-1">London School of Economics</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</BaseLayout>
