@@ -1,6 +1,8 @@
 ---
 import ResearchLayout from '../../layouts/ResearchLayout.astro';
 import ProjectSection from '../../components/ProjectSection.astro';
+import TeamMember from '../../components/TeamMember.astro';
+import RelatedLink from '../../components/RelatedLink.astro';
 ---
 
 <ResearchLayout
@@ -96,5 +98,214 @@ import ProjectSection from '../../components/ProjectSection.astro';
       of the first to do so.
     </p>
   </ProjectSection>
+
+  <!-- Section 4: A look at the poster -->
+  <ProjectSection id="the-poster" title="A look at the poster" accent="sky">
+    <figure>
+      <img
+        src="/images/poster.png"
+        alt="Recruitment poster for the study, featuring a hand-drawn silhouette of a head with flowers growing from it. Title: Growth-Oriented Practice in Psychosis. Subtitle: Call for Participants."
+        width="800"
+        class="rounded-lg w-full max-w-xl mx-auto block"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="mt-4 font-body text-sm text-muted text-center">
+        The poster used to invite mental health professionals to take part in the study.
+      </figcaption>
+    </figure>
+  </ProjectSection>
+
+  <!-- Section 5: What participation involves -->
+  <ProjectSection id="what-participation-involves" title="What participation involves" accent="peach">
+    <p>
+      The study involves a single online interview of 30 to 60 minutes, held over Microsoft
+      Teams at a time convenient for the participant. Sarah asks a range of questions about
+      the participant's experience of working with individuals who have experienced growth
+      following psychosis.
+    </p>
+    <p>
+      Interviews are recorded and transcribed via Teams. The transcript is checked for
+      accuracy against the recording and any identifying information is removed, after which
+      the original recording is deleted. Anonymised quotes from interviews may be used in
+      published reports. Participants are not identified in any publication.
+    </p>
+    <p>
+      Participants are free to withdraw their data from the study up to two weeks after the
+      interview, without giving any reason.
+    </p>
+  </ProjectSection>
+
+  <!-- Section 6: Who can take part -->
+  <ProjectSection id="who-can-take-part" title="Who can take part" accent="pink">
+    <p>Participants are mental health professionals with:</p>
+    <ul class="space-y-3 mt-2 list-none">
+      <li class="flex gap-3">
+        <span class="text-poster-teal mt-1.5 shrink-0" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="3"/></svg>
+        </span>
+        <span>At least one year of experience working with people who have experienced psychosis</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-poster-teal mt-1.5 shrink-0" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="3"/></svg>
+        </span>
+        <span>An awareness of the possibility of growth following psychosis</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-poster-teal mt-1.5 shrink-0" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="3"/></svg>
+        </span>
+        <span>An active intention to support clients not only to recover from psychosis but also to learn and grow from it</span>
+      </li>
+    </ul>
+  </ProjectSection>
+
+  <!-- Section 7: Ethical considerations -->
+  <ProjectSection id="ethical-considerations" title="Ethical considerations" accent="teal">
+    <p>
+      The study has been reviewed and given a favourable opinion by the Salomons Ethics Panel
+      at the Salomons Institute for Applied Psychology, Canterbury Christ Church University
+      (ethics reference ETH2425-0036).
+    </p>
+    <p>
+      All information collected is kept strictly confidential. Data is encrypted and stored on
+      password-protected systems on the Canterbury Christ Church University IT network. Only
+      the primary researcher and her supervisors have access. After the project is complete,
+      data is retained in encrypted form for ten years in line with university policy, then
+      destroyed.
+    </p>
+    <p>
+      Concerns about any aspect of the study can be raised with Sarah directly at{' '}
+      <a href="mailto:sb2144@canterbury.ac.uk" class="text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">sb2144@canterbury.ac.uk</a>.
+      Concerns that remain unresolved can be raised with her primary supervisor, Dr Anne Cooke
+      (<a href="mailto:anne.cooke@canterbury.ac.uk" class="text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">anne.cooke@canterbury.ac.uk</a>).
+      Formal complaints can be addressed to Dr Fergal Jones, Clinical Psychology Programme Research Director
+      (<a href="mailto:fergal.jones@canterbury.ac.uk" class="text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">fergal.jones@canterbury.ac.uk</a>).
+    </p>
+  </ProjectSection>
+
+  <!-- Section 8: The research team -->
+  <ProjectSection id="the-research-team" title="The research team" accent="coral">
+    <p class="text-muted text-sm italic mb-2">These short biographies are published with Anne's and Gerald's approval.</p>
+    <div class="space-y-6 mt-4">
+      <TeamMember name="Sarah Bowles" role="Lead researcher">
+        <p>
+          Sarah Bowles is a Trainee Clinical Psychologist in the final year of the Doctoral
+          Programme in Clinical Psychology at the Salomons Institute for Applied Psychology,
+          Canterbury Christ Church University. Her doctoral research focuses on how mental health
+          professionals can recognise and support growth following psychosis. Before training in
+          clinical psychology, Sarah worked as a counsellor, a teacher, and an assistant
+          psychologist in a range of NHS and third-sector settings in London and Hong Kong. Her
+          full background is on the <a href="/about" class="text-accent underline underline-offset-2 hover:text-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent">about page</a>.
+        </p>
+      </TeamMember>
+
+      <TeamMember name="Dr Anne Cooke" role="Primary supervisor">
+        <p>
+          Dr Anne Cooke is Principal Lecturer and Clinical Director of the Doctoral Programme in
+          Clinical Psychology at the Salomons Institute for Applied Psychology, Canterbury Christ
+          Church University. She trained at the Institute of Psychiatry in London, qualifying as a
+          clinical psychologist in 1992, and worked for many years in NHS mental health services
+          in inner-city London before joining Salomons in 1999.
+        </p>
+        <p>
+          Anne's clinical, research, and teaching interests centre on psychological approaches to
+          psychosis, community and critical psychology, and promoting public debate about
+          taken-for-granted ideas in mental health. She edited the British Psychological Society's
+          landmark public information report Understanding Psychosis and Schizophrenia, a
+          consensus document developed by 24 contributors drawn from eight universities and six
+          NHS trusts together with people who have themselves experienced psychosis. The report
+          has had significant national and international influence on how mental health services
+          understand and respond to psychosis.
+        </p>
+        <p>
+          In 2017 Anne was named British Psychological Society Practitioner of the Year,
+          recognising in particular her work to make high-quality public information about mental
+          health widely accessible. She writes regularly for the Salomons blog Discursive of
+          Tunbridge Wells.
+        </p>
+      </TeamMember>
+
+      <TeamMember name="Dr Gerald Jordan" role="Co-supervisor">
+        <p>
+          Dr Gerald Jordan is Lecturer and Assistant Professor in the School of Psychological
+          Science at the University of Bristol, where he leads the Reach Collective, a research
+          group investigating post-traumatic growth, peer support, recovery, and citizenship among
+          people facing mental health challenges. He received his PhD from McGill University and
+          completed postdoctoral fellowships at Yale University and McGill University.
+        </p>
+        <p>
+          Gerald's research examines the positive psychological changes, often described as
+          post-traumatic growth, that can follow a first episode of psychosis. His work explores
+          what these changes look like, what factors support them, and how mental health services
+          can play a meaningful role in facilitating growth alongside clinical recovery. He has
+          authored over 50 peer-reviewed publications and has secured research funding from bodies
+          in Canada, the UK, and the United States.
+        </p>
+        <p>
+          His writing for general audiences includes essays for Psyche exploring how psychosis,
+          while often a profoundly difficult experience, can also inspire growth in areas such as
+          a renewed sense of purpose and deeper relationships.
+        </p>
+      </TeamMember>
+    </div>
+  </ProjectSection>
+
+  <!-- Section 9: Related work -->
+  <ProjectSection id="related-work" title="Related work" accent="sage">
+    <p class="text-muted">
+      This research is part of a wider conversation about positive change following
+      psychosis. The work below offers a starting point for readers who want to explore the
+      field further.
+    </p>
+    <div class="space-y-4 mt-4">
+      <RelatedLink
+        title="The Reach Collective"
+        subtitle="University of Bristol"
+        description="Dr Gerald Jordan's research group, examining post-traumatic growth following psychosis and related areas of recovery and citizenship."
+        href="https://reach-collective.org"
+      />
+      <RelatedLink
+        title="Understanding Psychosis and Schizophrenia"
+        subtitle="British Psychological Society"
+        description="The landmark BPS public information report on psychosis, edited by Dr Anne Cooke. Written for service users, families, journalists, policymakers, and mental health workers."
+        href="https://www.bps.org.uk/guideline/understanding-psychosis-and-schizophrenia"
+      />
+      <RelatedLink
+        title="EPOCH"
+        subtitle="University of Nottingham"
+        description="The Experiences of Personal Outcomes from Hearing about recovery study, part of the Research into Recovery group's work on narrative-based approaches to recovery."
+        href="https://www.researchintorecovery.com/research/epoch/"
+      />
+      <RelatedLink
+        title="Discursive of Tunbridge Wells"
+        subtitle="Salomons blog"
+        description="The Salomons blog, with regular writing on critical and psychological approaches to mental health, edited by Anne Cooke and colleagues."
+        href="https://blogs.canterbury.ac.uk/discursive/"
+      />
+    </div>
+  </ProjectSection>
+
+  <!-- Section 10: Get in touch -->
+  <section id="get-in-touch" aria-labelledby="get-in-touch-heading" class="py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-6 md:px-8">
+      <div class="bg-poster-peach/15 rounded-xl px-8 py-12 text-center space-y-6">
+        <h2 id="get-in-touch-heading" class="font-display font-medium text-2xl md:text-3xl text-ink tracking-tight">
+          Get in touch
+        </h2>
+        <p class="font-body text-base md:text-lg text-muted leading-relaxed max-w-prose mx-auto">
+          If this work resonates with you and you'd like to discuss it or contribute, please get
+          in touch.
+        </p>
+        <a
+          href="mailto:sb2144@canterbury.ac.uk"
+          class="inline-block font-display font-semibold text-xl md:text-2xl text-accent hover:text-accent-hover transition-colors underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          sb2144@canterbury.ac.uk
+        </a>
+      </div>
+    </div>
+  </section>
 
 </ResearchLayout>
