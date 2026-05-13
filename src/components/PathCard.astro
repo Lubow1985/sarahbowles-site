@@ -11,12 +11,12 @@ const { title, description, href, accent = false } = Astro.props;
 
 <a
   href={href}
-  class={`block bg-surface border border-border rounded-lg p-6 md:p-8 hover:border-border-strong transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${accent ? 'border-l-4 border-l-poster-teal' : ''}`}
+  class={`card${accent ? ' border-l-4 border-l-poster-teal' : ''}`}
 >
-  <h2 class="font-display font-medium text-xl md:text-2xl text-ink mb-3">
+  <h2 class="font-display font-medium text-ink mb-2" style="font-size: var(--fs-h3)">
     {title}
   </h2>
-  <p class="font-body text-base text-muted leading-relaxed">
+  <p class="font-body text-muted leading-relaxed" style="font-size: var(--fs-body)">
     {description}
   </p>
 </a>

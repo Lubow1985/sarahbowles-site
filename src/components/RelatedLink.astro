@@ -13,15 +13,15 @@ const { title, subtitle, description, href } = Astro.props;
   href={href}
   target="_blank"
   rel="noopener noreferrer"
-  class="flex items-start justify-between gap-6 bg-surface border border-border rounded-lg p-6 hover:border-border-strong transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent group"
+  class="card flex items-start justify-between gap-4 group"
 >
   <div class="min-w-0">
-    <p class="font-display font-medium text-lg text-ink group-hover:text-accent transition-colors">{title}</p>
-    <p class="font-body text-sm text-muted mt-0.5 mb-3">{subtitle}</p>
-    <p class="font-body text-sm text-muted leading-relaxed">{description}</p>
+    <p class="font-display font-medium text-ink group-hover:text-accent transition-colors" style="font-size: var(--fs-h3)">{title}</p>
+    <p class="font-body text-muted mt-0.5 mb-2" style="font-size: var(--fs-small)">{subtitle}</p>
+    <p class="font-body text-muted leading-relaxed" style="font-size: var(--fs-small)">{description}</p>
   </div>
   <span class="shrink-0 text-subtle group-hover:text-accent transition-colors mt-1" aria-hidden="true">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
       <polyline points="15 3 21 3 21 9"/>
       <line x1="10" y1="14" x2="21" y2="3"/>
