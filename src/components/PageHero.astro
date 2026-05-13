@@ -9,9 +9,9 @@ const { title, eyebrow, strapline } = Astro.props;
 ---
 
 <div class="border-b border-border">
-  <div class="container" style="padding-block: var(--space-2xl)">
+  <div class="container" style="padding-top: 2.5rem; padding-bottom: 2rem">
     {eyebrow && (
-      <p class="font-body text-sm font-medium text-muted uppercase tracking-widest mb-4">
+      <p class="font-body text-sm font-medium text-muted uppercase tracking-widest mb-3">
         {eyebrow}
       </p>
     )}
@@ -19,7 +19,7 @@ const { title, eyebrow, strapline } = Astro.props;
       {title}
     </h1>
     {strapline && (
-      <p class="mt-6 font-body text-lg md:text-xl text-muted leading-relaxed" style="max-width: 68ch">
+      <p class="mt-4 font-body text-base md:text-lg text-muted leading-relaxed" style="max-width: 68ch">
         {strapline}
       </p>
     )}

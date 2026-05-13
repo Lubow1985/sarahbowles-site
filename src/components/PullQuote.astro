@@ -6,9 +6,8 @@ interface Props {
 const { text } = Astro.props;
 ---
 
-<blockquote class="my-12">
-  <div class="w-12 h-0.5 bg-accent mb-6" aria-hidden="true"></div>
-  <p class="font-display font-medium text-3xl md:text-4xl text-ink leading-snug tracking-tight italic">
+<blockquote class="my-6" style="border-left: 3px solid var(--color-accent); padding-inline-start: var(--space-lg); max-width: 60ch">
+  <p class="font-display italic text-ink" style="font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem); line-height: 1.45; font-weight: 400">
     {text}
   </p>
 </blockquote>
