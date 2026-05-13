@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FAF8F2"/>
+
+  <!-- Botanical accent -->
+  <g transform="translate(554, 160)" stroke="#2D6A6F" stroke-width="2" fill="none" opacity="0.5">
+    <path d="M46 90 C46 90 20 62 20 40 C20 23 31 12 46 12 C61 12 72 23 72 40 C72 62 46 90 46 90Z"/>
+    <line x1="46" y1="90" x2="46" y2="42"/>
+    <path d="M46 65 C46 65 33 55 30 40" stroke-linecap="round"/>
+    <path d="M46 55 C46 55 59 45 62 30" stroke-linecap="round"/>
+  </g>
+
+  <!-- Name -->
+  <text
+    x="600"
+    y="310"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="600"
+    font-size="72"
+    fill="#1A1F2E"
+    letter-spacing="-1"
+  >Sarah Bowles</text>
+
+  <!-- Separator dot -->
+  <circle cx="600" cy="348" r="3" fill="#2D6A6F"/>
+
+  <!-- Role -->
+  <text
+    x="600"
+    y="395"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, Arial, sans-serif"
+    font-weight="400"
+    font-size="32"
+    fill="#4A5568"
+    letter-spacing="0.5"
+  >Trainee Clinical Psychologist</text>
+
+  <!-- Accent line -->
+  <rect x="548" y="430" width="104" height="2" rx="1" fill="#2D6A6F"/>
+</svg>

@@ -7,7 +7,7 @@
   --color-bg-warm: #FBF8F2;
   --color-ink: #1A1F2E;
   --color-muted: #4A5568;
-  --color-subtle: #8B95A7;
+  --color-subtle: #667286;   /* darkened to pass WCAG AA 4.5:1 on both white and warm bg */
   --color-border: #E5E2DC;
   --color-border-strong: #C5BDB0;
 

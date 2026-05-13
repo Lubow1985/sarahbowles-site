@@ -3,6 +3,27 @@ import ResearchLayout from '../../layouts/ResearchLayout.astro';
 import ProjectSection from '../../components/ProjectSection.astro';
 import TeamMember from '../../components/TeamMember.astro';
 import RelatedLink from '../../components/RelatedLink.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Growth-Oriented Practice in Psychosis",
+  "description": "A grounded-theory study exploring how mental health professionals understand growth following psychosis and how they support it in clinical practice.",
+  "author": {
+    "@type": "Person",
+    "name": "Sarah Bowles",
+    "jobTitle": "Trainee Clinical Psychologist",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Salomons Institute for Applied Psychology, Canterbury Christ Church University"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Salomons Institute for Applied Psychology, Canterbury Christ Church University"
+  },
+  "url": "https://sarahbowles.co.uk/research/growth-oriented-practice-in-psychosis"
+};
 ---
 
 <ResearchLayout
@@ -10,6 +31,7 @@ import RelatedLink from '../../components/RelatedLink.astro';
   description="A doctoral research project exploring how mental health professionals can recognise and support growth following psychosis. Led by Sarah Bowles at Salomons Institute, Canterbury Christ Church University."
   pathname="/research/growth-oriented-practice-in-psychosis"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <!-- Hero -->
   <section class="border-b border-border">
@@ -55,19 +77,19 @@ import RelatedLink from '../../components/RelatedLink.astro';
     </p>
     <ol class="space-y-4 mt-2 list-none">
       <li class="flex gap-4">
-        <span class="font-body font-semibold text-poster-coral shrink-0 w-6">1.</span>
+        <span class="font-body font-semibold text-accent shrink-0 w-6">1.</span>
         <span>How do they understand the ways in which growth can occur following psychosis?</span>
       </li>
       <li class="flex gap-4">
-        <span class="font-body font-semibold text-poster-coral shrink-0 w-6">2.</span>
+        <span class="font-body font-semibold text-accent shrink-0 w-6">2.</span>
         <span>How does that understanding shape their clinical practice?</span>
       </li>
       <li class="flex gap-4">
-        <span class="font-body font-semibold text-poster-coral shrink-0 w-6">3.</span>
+        <span class="font-body font-semibold text-accent shrink-0 w-6">3.</span>
         <span>What are the core elements of growth-oriented practice, and when should they be applied?</span>
       </li>
       <li class="flex gap-4">
-        <span class="font-body font-semibold text-poster-coral shrink-0 w-6">4.</span>
+        <span class="font-body font-semibold text-accent shrink-0 w-6">4.</span>
         <span>What cultural and ethical considerations shape this kind of work?</span>
       </li>
     </ol>

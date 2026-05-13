@@ -8,7 +8,7 @@ interface Props {
 const { title, description, path } = Astro.props;
 const siteUrl = 'https://sarahbowles.co.uk';
 const canonical = `${siteUrl}${path}`;
-const ogImage = `${siteUrl}/og-image.png`;
+const ogImage = `${siteUrl}/og-image.svg`; // placeholder — replace with a proper PNG before launch
 const isHome = path === '/';
 const pageTitle = isHome ? title : `${title} | Sarah Bowles`;
 ---
