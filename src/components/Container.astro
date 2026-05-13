@@ -5,13 +5,13 @@ interface Props {
 
 const { width = 'default' } = Astro.props;
 
-const widthClass = {
-  narrow: 'max-w-3xl',
-  default: 'max-w-5xl',
-  wide: 'max-w-7xl',
+const widthStyle = {
+  narrow: 'max-width: 68ch',
+  default: '',
+  wide:    'max-width: 90rem',
 }[width];
 ---
 
-<div class={`${widthClass} mx-auto px-6 md:px-8`}>
+<div class="container" style={widthStyle || undefined}>
   <slot />
 </div>

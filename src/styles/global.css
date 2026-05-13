@@ -60,6 +60,15 @@
   --lh-body:    1.65;
 }
 
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: clamp(1rem, 4vw, 2rem);
+  }
+}
+
 @layer base {
   html {
     font-family: var(--font-body);
