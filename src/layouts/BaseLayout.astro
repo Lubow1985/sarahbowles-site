@@ -3,8 +3,6 @@ import SEO from '../components/SEO.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import '@fontsource-variable/fraunces';
-import '@fontsource-variable/inter';
 
 interface Props {
   title: string;
@@ -27,6 +25,9 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="author" content="Sarah Bowles" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <SEO title={title} description={description} path={pathname} />
   </head>
   <body class="bg-bg text-ink font-body antialiased min-h-screen flex flex-col">
