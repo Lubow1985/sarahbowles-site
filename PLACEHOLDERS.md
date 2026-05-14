@@ -8,8 +8,6 @@ Items that need real content before the site goes live. All are rendered with a 
 
 | Placeholder | What's needed | Notes |
 |---|---|---|
-| Hero bio | 2–3 sentences summarising Sarah's research focus and background | Shown directly below her role/affiliation |
-| CTA button text | The label for the second hero button | Likely "Take part in the research" — Sarah to confirm |
 | Headshot photo | A professional photo of Sarah (square crop works best, min 400×400px) | Used as circular portrait in the hero |
 
 ---
@@ -28,7 +26,7 @@ Items that need real content before the site goes live. All are rendered with a 
 
 | Placeholder | What's needed | Notes |
 |---|---|---|
-| CV image | A screenshot or scan of Sarah's CV | Could also be a link to a PDF — Sarah to decide |
+| CV content | A PDF version of the CV | Save `CV Sarah Bowles (1).doc` as PDF, drop it in `public/`, and I'll wire it up |
 
 ---
 
