@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 280 280">
+  <circle cx="140" cy="140" r="140" fill="#E5E7EB"/>
+  <circle cx="140" cy="110" r="45" fill="#9CA3AF"/>
+  <ellipse cx="140" cy="220" rx="70" ry="50" fill="#9CA3AF"/>
+  <text x="140" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#6B7280" letter-spacing="1">PLACEHOLDER</text>
+</svg>

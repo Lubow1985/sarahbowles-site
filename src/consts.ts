@@ -1,18 +1,19 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Friedrich Nietzsche';
-export const SITE_DESCRIPTION = 'The academic portfolio of Friedrich Nietzsche.';
+export const SITE_TITLE = 'Sarah Bowles';
+export const SITE_DESCRIPTION = 'Doctoral research in clinical psychology at the Salomons Institute for Applied Psychology, Canterbury Christ Church University.';
 
-export const CV_URL = 'https://shravangoswami.com/resume.pdf';
+export const CV_URL = '';
 
 export const CONTACT = {
-  organization: 'Shravan Goswami',
+  organization: 'Sarah Bowles',
   addressLines: [
-    'Creator of Astro Scholar',
+    'Salomons Institute for Applied Psychology',
+    'Canterbury Christ Church University',
   ],
   emails: [
-    'contact@shravangoswami.com',
+    'sb2144@canterbury.ac.uk',
   ],
 };
 
@@ -24,30 +25,15 @@ export const SOCIAL_LINKS: ReadonlyArray<{
   icon: SocialIcon;
 }> = [
   {
-    label: 'GitHub',
-    href: 'https://github.com/shravanngoswamii/astro-scholar',
-    icon: 'github',
-  },
-  {
     label: 'Email',
-    href: 'mailto:contact@shravangoswami.com',
+    href: 'mailto:sb2144@canterbury.ac.uk',
     icon: 'email',
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/shravangoswami/',
-    icon: 'linkedin',
-  },
-  {
-    label: 'X',
-    href: 'https://x.com/shravangoswamii',
-    icon: 'twitter',
   },
 ];
 
 export const FOOTER_CREDIT = {
   designerName: 'Shravan Goswami',
   designerUrl: 'https://shravangoswami.com',
-  sourceLabel: 'Open Source',
+  sourceLabel: 'Astro Scholar',
   sourceUrl: 'https://github.com/shravanngoswamii/astro-scholar',
 };

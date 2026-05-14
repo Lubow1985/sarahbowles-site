@@ -378,3 +378,19 @@ a:hover {
 		height: auto;
 	}
 }
+
+/* TODO: remove when placeholders resolved */
+.placeholder {
+	background-color: #FFF3CD;
+	border: 2px dashed #FFC107;
+	padding: 4px 10px;
+	border-radius: 4px;
+	color: #664d03;
+	font-style: italic;
+	display: inline-block;
+}
+.placeholder-link {
+	border: 2px dashed #FFC107 !important;
+	background-color: #FFF3CD !important;
+	color: #664d03 !important;
+}
