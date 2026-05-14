@@ -2,29 +2,27 @@
 
 :root {
 	/* Typography */
-	--font-sans: 'Atkinson', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	--font-serif: "Georgia", "Times New Roman", Times, serif;
+	--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--font-serif: 'Fraunces', Georgia, "Times New Roman", Times, serif;
 
 	/* --- LIGHT THEME (Default) --- */
-	--color-bg: #ffffff;
-	--color-bg-offset: #ffffff;
-	/* Clean white for premium feel */
-	--color-bg-header: rgba(255, 255, 255, 0.85);
+	--color-bg: #FAF7F2;
+	--color-bg-offset: #F0E8D8;
+	--color-bg-header: rgba(250, 247, 242, 0.85);
 	--color-text-main: #1a1a1a;
 	--color-text-muted: #555555;
-	--color-accent: #003366;
-	/* Oxford Blue */
-	--color-accent-light: #e6f0fa;
-	--color-border: #eaeaea;
+	--color-accent: #6B8E83;
+	--color-accent-light: #DCE5E1;
+	--color-border: #E5DCC8;
 	--color-header-border: rgba(0, 0, 0, 0.08);
-	--color-bg-mobile-menu: rgba(255, 255, 255, 0.95);
+	--color-bg-mobile-menu: rgba(250, 247, 242, 0.97);
 
 	/* Spacing & UI */
 	--max-width: 960px;
-	--radius: 8px;
-	--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
-	--shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+	--radius: 12px;
+	--shadow-sm: 0 1px 3px rgba(43, 37, 32, 0.06);
+	--shadow-md: 0 4px 6px rgba(43, 37, 32, 0.08);
+	--shadow-lg: 0 10px 15px rgba(43, 37, 32, 0.1);
 }
 
 /* --- DARK THEME --- */
