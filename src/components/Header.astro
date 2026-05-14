@@ -1,9 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { CV_URL, SITE_TITLE } from '../consts';
+import { SITE_TITLE } from '../consts';
 import { url } from '../utils/paths';
-
-const cvHref = CV_URL ? url(CV_URL) : null;
 ---
 
 <header>
@@ -12,18 +10,10 @@ const cvHref = CV_URL ? url(CV_URL) : null;
         
 		<div class="internal-links">
 			<HeaderLink href={url('/')}>Home</HeaderLink>
-			<HeaderLink href={url('/publications')}>Publications</HeaderLink>
-			<HeaderLink href={url('/projects')}>Projects</HeaderLink>
+			<HeaderLink href={url('/about')}>About</HeaderLink>
+			<HeaderLink href={url('/projects')}>Research</HeaderLink>
 			<HeaderLink href={url('/team')}>Team</HeaderLink>
-			<div class="dropdown">
-				<button class="dropbtn">Blog</button>
-				<div class="dropdown-content">
-					<HeaderLink href={url('/blog')}>News</HeaderLink>
-					<HeaderLink href={url('/tags')}>Tags</HeaderLink>
-					<HeaderLink href={url('/archive')}>Archive</HeaderLink>
-				</div>
-			</div>
-			{cvHref && <HeaderLink href={cvHref} target="_blank">CV</HeaderLink>}
+			<HeaderLink href={url('/contact')}>Contact</HeaderLink>
 		</div>
 
         <div class="header-actions">
@@ -52,16 +42,10 @@ const cvHref = CV_URL ? url(CV_URL) : null;
             </button>
         </div>
         <a href={url('/')}>Home</a>
-        <a href={url('/publications')}>Publications</a>
-        <a href={url('/projects')}>Projects</a>
+        <a href={url('/about')}>About</a>
+        <a href={url('/projects')}>Research</a>
         <a href={url('/team')}>Team</a>
-        <span class="mobile-menu-section">Blog</span>
-        <div class="mobile-submenu">
-            <a href={url('/blog')}>News</a>
-            <a href={url('/tags')}>Tags</a>
-            <a href={url('/archive')}>Archive</a>
-        </div>
-        {cvHref && <a href={cvHref} target="_blank">CV</a>}
+        <a href={url('/contact')}>Contact</a>
     </div>
 </header>
 
