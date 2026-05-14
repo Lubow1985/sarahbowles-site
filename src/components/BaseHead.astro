@@ -54,10 +54,7 @@ const imageUrl = typeof image === 'string'
 		try {
 			const s = localStorage.getItem('theme');
 			if (s === 'dark' || s === 'light') theme = s;
-			else if (matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
-		} catch {
-			if (matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
-		}
+		} catch {}
 		paintTheme(theme);
 		window.addEventListener('load', () => root.setAttribute('data-theme-ready', 'true'), { once: true });
 		window.__setPreferredTheme = paintTheme;
