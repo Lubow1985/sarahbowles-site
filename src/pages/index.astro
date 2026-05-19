@@ -7,62 +7,96 @@ import { url } from '../utils/paths';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-			.hero {
-				display: flex;
-				align-items: center;
-				gap: 4rem;
-				padding: 4rem 0;
-				margin-bottom: 2rem;
+			.hero-intro {
+				max-width: 65ch;
+				line-height: 1.75;
+				margin-bottom: 3rem;
+				color: var(--color-text-muted);
 			}
-			.hero-content { flex: 3; }
-			.hero-image {
-				flex: 2;
-				text-align: center;
-				position: relative;
+			.path-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1.25rem;
+				margin-bottom: 2.5rem;
 			}
-			.hero-image img {
-				width: 280px;
-				height: 280px;
-				object-fit: cover;
-				border-radius: 50%;
-				border: 6px solid var(--color-bg);
-				box-shadow: 0 0 0 1px var(--color-border), var(--shadow-lg);
+			.path-card {
+				display: block;
+				padding: 1.5rem;
+				border: 1px solid var(--color-border);
+				border-radius: 12px;
+				text-decoration: none;
+				background-color: var(--color-bg-offset);
+				transition: border-color 0.2s, box-shadow 0.2s;
 			}
-			.hero-buttons {
-				display: flex;
-				gap: 1rem;
-				flex-wrap: wrap;
+			.path-card:hover {
+				border-color: var(--color-accent);
+				box-shadow: var(--shadow-md);
+				text-decoration: none;
 			}
-			@media (max-width: 768px) {
-				.hero { flex-direction: column-reverse; text-align: center; padding: 2rem 0; gap: 2rem; }
-				.hero-image img { width: 200px; height: 200px; }
-				.hero-buttons { justify-content: center; }
+			.path-card-title {
+				font-weight: 700;
+				color: var(--color-text-main);
+				display: block;
+				margin-bottom: 0.5rem;
+				font-size: 1.05rem;
+			}
+			.path-card-desc {
+				font-size: 0.9rem;
+				color: var(--color-text-muted);
+				margin: 0;
+				line-height: 1.6;
+			}
+			.callout {
+				border-left: 3px solid var(--color-accent);
+				background-color: var(--color-bg-offset);
+				padding: 1.25rem 1.5rem;
+				border-radius: 0 8px 8px 0;
+				font-size: 0.95rem;
+				color: var(--color-text-muted);
+				line-height: 1.75;
+			}
+			.callout a {
+				color: var(--color-accent);
+			}
+			@media (max-width: 640px) {
+				.path-grid { grid-template-columns: 1fr; }
 			}
 		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<section class="hero">
-				<div class="hero-content">
-					<h1 style="margin-bottom: 0.5rem; font-size: 3rem;">Sarah Bowles</h1>
-					<h2 style="font-weight: 400; color: var(--color-text-muted); margin-bottom: 1.5rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.05em; font-size: 1rem; border-bottom: none; padding-bottom: 0; display: block; margin-top: 0;">
-						Trainee Clinical Psychologist<br/>
-						Salomons Institute for Applied Psychology, Canterbury Christ Church University
-					</h2>
-					<p style="margin-bottom: 2rem;">An unconventional route into clinical psychology, shaped by economics, teaching, and counselling work across London and Hong Kong.</p>
-					<div class="hero-buttons">
-						<a href={url('/projects')} class="btn">View Research</a>
-					</div>
-				</div>
-				<div class="hero-image">
-					<img src={url('/placeholder-headshot.svg')} width="280" height="280" alt="[PLACEHOLDER: Photo of Sarah Bowles]" />
-				</div>
-			</section>
+			<span class="page-eyebrow">A doctoral research project</span>
+			<h1 class="page-title">Growth-Oriented Practice in Psychosis</h1>
+			<p class="page-strapline">What helps people grow through and beyond experiences of psychosis — and how can clinicians support that growth?</p>
+			<p class="hero-intro">This site introduces an ongoing doctoral research project at the Salomons Institute for Applied Psychology, Canterbury Christ Church University. The project explores how mental health professionals understand growth following psychosis and how they can recognise, protect and support it in clinical practice.</p>
+
+			<div class="path-grid">
+				<a href={url('/background')} class="path-card">
+					<span class="path-card-title">Background to the Research</span>
+					<p class="path-card-desc">The growing evidence base for positive changes following psychosis, and why a broader model of growth is needed.</p>
+				</a>
+				<a href={url('/project')} class="path-card">
+					<span class="path-card-title">The Research Project</span>
+					<p class="path-card-desc">Aims, research questions, methods, and how mental health professionals can take part.</p>
+				</a>
+				<a href={url('/team')} class="path-card">
+					<span class="path-card-title">Research Team</span>
+					<p class="path-card-desc">The lead researcher and supervisors behind the project.</p>
+				</a>
+				<a href={url('/ethics')} class="path-card">
+					<span class="path-card-title">Ethical Approval</span>
+					<p class="path-card-desc">How the study has been reviewed, and how participants are protected.</p>
+				</a>
+			</div>
+
+			<div class="callout">
+				The study is actively recruiting mental health professionals who aim to support clients to learn and grow from experiences of psychosis. If that describes your practice, please see <a href={url('/project')}>The Research Project</a> page for details.
+			</div>
 		</main>
 		<Footer />
 	</body>

@@ -7,7 +7,7 @@ import { url } from '../utils/paths';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <BaseHead title={`404 | ${SITE_TITLE}`} description="The page you requested could not be found." />
     <style>
@@ -185,18 +185,17 @@ import { url } from '../utils/paths';
 
             <div class="actions">
               <a class="btn" href={url('/')}>Return Home</a>
-              <a class="btn btn-outline" href={url('/blog')}>Read the Blog</a>
+              <a class="btn btn-outline" href={url('/project')}>The Research Project</a>
             </div>
           </div>
 
           <aside class="suggest">
             <h3>Quick Destinations</h3>
             <ul>
-              <li><a href={url('/publications')}>Publications</a></li>
-              <li><a href={url('/projects')}>Projects</a></li>
-              <li><a href={url('/team')}>Team</a></li>
-              <li><a href={url('/blog')}>News</a></li>
-              <li><a href={url('https://shravangoswami.com/resume.pdf')}>CV</a></li>
+              <li><a href={url('/background')}>Background to Research</a></li>
+              <li><a href={url('/project')}>The Research Project</a></li>
+              <li><a href={url('/team')}>Research Team</a></li>
+              <li><a href={url('/ethics')}>Ethical Approval</a></li>
             </ul>
           </aside>
         </div>

@@ -7,16 +7,13 @@ import { url } from '../utils/paths';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 	<head>
-		<BaseHead title={`Team — ${SITE_TITLE}`} description="The research team behind the Growth-Oriented Practice in Psychosis study." />
+		<BaseHead
+			title={`Research Team — ${SITE_TITLE}`}
+			description="The lead researcher and supervisors behind the Growth-Oriented Practice in Psychosis study."
+		/>
 		<style>
-			.team-note {
-				font-size: 0.9rem;
-				font-style: italic;
-				color: var(--color-text-muted);
-				margin-bottom: 2.5rem;
-			}
 			.member-card {
 				display: flex;
 				gap: 2.5rem;
@@ -41,24 +38,27 @@ import { url } from '../utils/paths';
 			}
 			.member-info h3 {
 				font-size: 1.5rem;
-				margin: 0 0 0.25rem 0;
+				margin: 0 0 0.15rem 0;
 				color: var(--color-text-main);
 			}
 			.member-role {
 				color: var(--color-accent);
 				font-weight: 600;
-				font-size: 0.9rem;
+				font-size: 0.85rem;
 				display: block;
-				text-transform: uppercase;
-				letter-spacing: 0.05em;
 				margin-bottom: 1rem;
+				line-height: 1.4;
 			}
 			.member-info p {
 				margin-bottom: 1rem;
 				line-height: 1.7;
+				color: var(--color-text-muted);
 			}
 			.member-info p:last-child {
 				margin-bottom: 0;
+			}
+			.member-info a {
+				color: var(--color-accent);
 			}
 			@media (max-width: 640px) {
 				.member-card {
@@ -73,14 +73,18 @@ import { url } from '../utils/paths';
 	<body>
 		<Header />
 		<main>
-			<h1>Research Team</h1>
+			<span class="page-eyebrow">Who we are</span>
+			<h1 class="page-title">Research Team</h1>
 
 			<div class="member-card">
 				<img src={url('/placeholder-headshot.svg')} alt="[PLACEHOLDER: Photo of Sarah Bowles]" class="member-avatar" width="120" height="120" />
 				<div class="member-info">
 					<h3>Sarah Bowles</h3>
-					<span class="member-role">Lead researcher</span>
-					<p>Sarah Bowles is a Trainee Clinical Psychologist in the final year of the Doctoral Programme in Clinical Psychology at the Salomons Institute for Applied Psychology, Canterbury Christ Church University. Her doctoral research focuses on how mental health professionals can recognise and support growth following psychosis. Before training in clinical psychology, Sarah worked as a counsellor, a teacher, and an assistant psychologist in a range of NHS and third-sector settings in London and Hong Kong. Her full background is on the <a href={url('/about')}>about page</a>.</p>
+					<span class="member-role">Lead Researcher · Trainee Clinical Psychologist · Salomons Institute for Applied Psychology, Canterbury Christ Church University</span>
+					<p>Sarah Bowles is the lead researcher on this study and is in the final year of the Doctoral Programme in Clinical Psychology at the Salomons Institute for Applied Psychology, Canterbury Christ Church University.</p>
+					<p>Sarah first trained as an economist at the London School of Economics, where she became interested in the systemic and structural conditions that shape human wellbeing. She went on to work as a teacher and as a counsellor in London and in Hong Kong before pursuing clinical training, an applied grounding that continues to inform how she thinks about good mental health practice.</p>
+					<p>Her doctoral work focuses on growth following psychosis: how clinicians understand it, what they do to support it, and how that practice might be more clearly articulated as a model for the field. Earlier in the doctoral programme she undertook a systematic narrative review of the quantitative literature on post-traumatic growth following psychosis, which provides part of the conceptual foundation for the present study.</p>
+					<p>Contact: <a href="mailto:sb2144@canterbury.ac.uk">sb2144@canterbury.ac.uk</a></p>
 				</div>
 			</div>
 
@@ -88,10 +92,11 @@ import { url } from '../utils/paths';
 				<img src={url('/placeholder-headshot.svg')} alt="[PLACEHOLDER: Photo of Dr Anne Cooke]" class="member-avatar" width="120" height="120" />
 				<div class="member-info">
 					<h3>Dr Anne Cooke</h3>
-					<span class="member-role">Primary supervisor</span>
+					<span class="member-role">Research Supervisor · Principal Lecturer and Clinical Director, Doctoral Programme in Clinical Psychology, Salomons Institute for Applied Psychology, Canterbury Christ Church University</span>
 					<p>Dr Anne Cooke is Principal Lecturer and Clinical Director of the Doctoral Programme in Clinical Psychology at the Salomons Institute for Applied Psychology, Canterbury Christ Church University. She trained at the Institute of Psychiatry in London, qualifying as a clinical psychologist in 1992, and worked for many years in NHS mental health services in inner-city London before joining Salomons in 1999.</p>
 					<p>Anne's clinical, research, and teaching interests centre on psychological approaches to psychosis, community and critical psychology, and promoting public debate about taken-for-granted ideas in mental health. She edited the British Psychological Society's landmark public information report Understanding Psychosis and Schizophrenia, a consensus document developed by 24 contributors drawn from eight universities and six NHS trusts together with people who have themselves experienced psychosis. The report has had significant national and international influence on how mental health services understand and respond to psychosis.</p>
 					<p>In 2017 Anne was named British Psychological Society Practitioner of the Year, recognising in particular her work to make high-quality public information about mental health widely accessible. She writes regularly for the Salomons blog Discursive of Tunbridge Wells.</p>
+					<p>Contact: <a href="mailto:anne.cooke@canterbury.ac.uk">anne.cooke@canterbury.ac.uk</a></p>
 				</div>
 			</div>
 
@@ -99,10 +104,11 @@ import { url } from '../utils/paths';
 				<img src={url('/placeholder-headshot.svg')} alt="[PLACEHOLDER: Photo of Dr Gerald Jordan]" class="member-avatar" width="120" height="120" />
 				<div class="member-info">
 					<h3>Dr Gerald Jordan</h3>
-					<span class="member-role">Co-supervisor</span>
+					<span class="member-role">Research Supervisor · Lecturer, School of Psychological Science, University of Bristol</span>
 					<p>Dr Gerald Jordan is Lecturer and Assistant Professor in the School of Psychological Science at the University of Bristol, where he leads the Reach Collective, a research group investigating post-traumatic growth, peer support, recovery, and citizenship among people facing mental health challenges. He received his PhD from McGill University and completed postdoctoral fellowships at Yale University and McGill University.</p>
 					<p>Gerald's research examines the positive psychological changes, often described as post-traumatic growth, that can follow a first episode of psychosis. His work explores what these changes look like, what factors support them, and how mental health services can play a meaningful role in facilitating growth alongside clinical recovery. He has authored over 50 peer-reviewed publications and has secured research funding from bodies in Canada, the UK, and the United States.</p>
 					<p>His writing for general audiences includes essays for Psyche exploring how psychosis, while often a profoundly difficult experience, can also inspire growth in areas such as a renewed sense of purpose and deeper relationships.</p>
+					<p>Contact: <a href="mailto:gerald.jordan@bristol.ac.uk">gerald.jordan@bristol.ac.uk</a></p>
 				</div>
 			</div>
 		</main>

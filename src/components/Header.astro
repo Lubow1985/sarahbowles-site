@@ -1,19 +1,16 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 import { url } from '../utils/paths';
 ---
 
 <header>
 	<nav>
-		<h2><a href={url('/')}>{SITE_TITLE}</a></h2>
-        
 		<div class="internal-links">
 			<HeaderLink href={url('/')}>Home</HeaderLink>
-			<HeaderLink href={url('/about')}>About</HeaderLink>
-			<HeaderLink href={url('/projects')}>Research</HeaderLink>
-			<HeaderLink href={url('/team')}>Team</HeaderLink>
-			<HeaderLink href={url('/cv')}>CV</HeaderLink>
+			<HeaderLink href={url('/background')}>Background to Research</HeaderLink>
+			<HeaderLink href={url('/project')}>The Research Project</HeaderLink>
+			<HeaderLink href={url('/team')}>Research Team</HeaderLink>
+			<HeaderLink href={url('/ethics')}>Ethical Approval</HeaderLink>
 		</div>
 
         <div class="header-actions">
@@ -39,10 +36,10 @@ import { url } from '../utils/paths';
             </button>
         </div>
         <a href={url('/')}>Home</a>
-        <a href={url('/about')}>About</a>
-        <a href={url('/projects')}>Research</a>
-        <a href={url('/team')}>Team</a>
-        <a href={url('/cv')}>CV</a>
+        <a href={url('/background')}>Background to Research</a>
+        <a href={url('/project')}>The Research Project</a>
+        <a href={url('/team')}>Research Team</a>
+        <a href={url('/ethics')}>Ethical Approval</a>
     </div>
 </header>
 
@@ -97,19 +94,6 @@ import { url } from '../utils/paths';
 		margin: 0 auto;
 		height: 4.5rem;
 	}
-	h2 {
-		margin: 0;
-		font-size: 1.3em;
-		font-family: var(--font-sans);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-	}
-	h2 a {
-		text-decoration: none;
-		color: var(--color-text-main);
-        border: none;
-	}
-
 	.internal-links {
         display: flex;
         gap: 0.25rem;

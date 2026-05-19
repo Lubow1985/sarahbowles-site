@@ -1,0 +1,68 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<BaseHead
+			title={`Background to the Research — ${SITE_TITLE}`}
+			description="The growing evidence base for positive changes following psychosis, and why a broader model of growth is needed."
+		/>
+		<style>
+			.prose-section {
+				max-width: 68ch;
+				margin-bottom: 3rem;
+			}
+			.prose-section h2 {
+				margin-top: 0;
+			}
+			.prose-section p {
+				line-height: 1.75;
+				margin-bottom: 1.25rem;
+				color: var(--color-text-muted);
+			}
+			.page-footnote {
+				max-width: 68ch;
+				font-size: 0.85rem;
+				color: var(--color-text-muted);
+				border-top: 1px solid var(--color-border);
+				padding-top: 1.5rem;
+				line-height: 1.6;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="prose-section">
+				<h1 class="page-title">Evidence for growth after psychosis</h1>
+				<p>Psychosis can be distressing, and its impact on people's lives is often significant. At the same time, a growing body of research shows that many people also describe meaningful positive changes in the aftermath of psychosis. These include a renewed sense of purpose, deeper relationships, a stronger or more settled sense of self, shifts in priorities, and a richer spiritual or existential life.</p>
+				<p>Much of the empirical work in this area has been framed around the concept of post-traumatic growth: the idea, originally developed in the wider trauma literature, that the struggle with highly challenging life circumstances can sometimes give rise to positive psychological change. Studies using this framework consistently find that a substantial proportion of people who have experienced psychosis report moderate to high levels of growth.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Why a broader model is needed</h2>
+				<p>Preliminary findings from a systematic narrative review undertaken as part of this doctoral programme (in preparation) suggest that the post-traumatic growth framework, on its own, may be too narrow for understanding positive change following psychosis. The review evaluated the quantitative literature in this area and identified several conceptual and methodological challenges.</p>
+				<p>The most widely used measure, the Posttraumatic Growth Inventory, requires participants to attribute positive changes specifically to a 'crisis'. This constrains the kinds of change that get counted as growth and rules out other plausible pathways.</p>
+				<p>The relationship between psychosis and trauma is also complex. Psychosis can be experienced as traumatic, as a response to earlier trauma, and for some people as meaningful or even spiritual rather than as trauma at all. A framework that assumes trauma is the engine of growth fits some experiences well and others poorly.</p>
+				<p>Qualitative studies repeatedly describe forms of positive change that do not map cleanly onto the post-traumatic growth construct, even when they are reported under that label. These include meaning-making in relation to unusual experiences, reconnecting with earlier parts of the self, spiritual emergence, and personal recovery.</p>
+				<p>A broader and more nuanced model of growth following psychosis is therefore needed: one that includes post-traumatic growth as a possible route into positive change, while leaving room for the other routes that people describe.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Why this matters for clinical practice</h2>
+				<p>How clinicians understand growth affects how they support it. If growth is only recognised when it fits the shape of post-traumatic growth, other forms of positive change can go unsupported or even invalidated.</p>
+				<p>Framing growth too narrowly also risks reintroducing assumptions that the mental health field has spent the last two decades carefully moving away from: that the content of psychotic experiences is meaningless, that recovery means returning to a pre-psychosis baseline, or that growth must be earned through trauma. The qualitative and lived-experience literatures describe something richer.</p>
+				<p>This research project takes that broader picture as its starting point and asks clinicians who already work in this way how they do it.</p>
+			</section>
+
+			<p class="page-footnote">The systematic narrative review referred to here is in preparation and has not yet been submitted for publication. A summary can be requested from the lead researcher.</p>
+		</main>
+		<Footer />
+	</body>
+</html>

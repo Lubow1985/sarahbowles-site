@@ -1,0 +1,80 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<BaseHead
+			title={`Ethical Approval — ${SITE_TITLE}`}
+			description="Summary of the study's ethical review and participant safeguards."
+		/>
+		<style>
+			.prose-section {
+				max-width: 68ch;
+				margin-bottom: 2.5rem;
+			}
+			.prose-section h2 {
+				margin-top: 0;
+			}
+			.prose-section p {
+				line-height: 1.75;
+				margin-bottom: 1.25rem;
+				color: var(--color-text-muted);
+			}
+			.prose-section a {
+				color: var(--color-accent);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<span class="page-eyebrow">How participants are protected</span>
+			<h1 class="page-title">Ethical Approval</h1>
+			<p class="page-strapline">Summary of the study's ethical review and participant safeguards.</p>
+
+			<section class="prose-section">
+				<h2>Review and approval</h2>
+				<p>This study has been reviewed and given a favourable opinion by the Salomons Ethics Panel at the Salomons Institute for Applied Psychology, Canterbury Christ Church University.</p>
+				<p>
+					Ethics reference: ETH2425-0036<br/>
+					Lead researcher: Sarah Bowles<br/>
+					Supervisors: Dr Anne Cooke and Dr Gerald Jordan
+				</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Informed consent</h2>
+				<p>Anyone interested in taking part is first sent a participant information sheet explaining the study in full. Consent is obtained electronically through a written consent form before any interview takes place. Participation is entirely voluntary, and no one will be interviewed who has not given informed consent.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Withdrawal</h2>
+				<p>Participants are free to withdraw from the interview at any point, without giving any reason. After the interview, participants can withdraw their data from the study at any point in the following two weeks; if they do, their data will be removed and not used. After this point, data has typically been incorporated into the analysis and cannot reliably be extracted.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Confidentiality and data protection</h2>
+				<p>Interviews take place online via Microsoft Teams and are recorded and transcribed through Teams on Canterbury Christ Church University's secure IT system. Transcripts are checked against the recordings for accuracy and identifying information is removed. The original recordings are then deleted.</p>
+				<p>All data is held under password protection on encrypted university systems. Only the lead researcher has access to the raw data; supervisors have access only to anonymised data. Demographic information is collected via Qualtrics, which is GDPR-compliant.</p>
+				<p>Anonymised quotes from interviews may be used in published reports of the study, but no participant will be identifiable in any publication. After completion of the project, data is held in encrypted, password-protected form by the Salomons Institute for ten years, in line with university policy, and then permanently destroyed.</p>
+				<p>The only circumstance in which information would be passed on outside the research team is if something disclosed in interview led the researcher to be concerned that the participant or someone else was at risk of serious harm.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Concerns and complaints</h2>
+				<p>Anyone with a concern about any aspect of the study is encouraged to raise it with the lead researcher, Sarah Bowles, at <a href="mailto:sb2144@canterbury.ac.uk">sb2144@canterbury.ac.uk</a>. Concerns can also be raised with the supervisor, Dr Anne Cooke, at <a href="mailto:anne.cooke@canterbury.ac.uk">anne.cooke@canterbury.ac.uk</a>. Formal complaints can be made to the Clinical Psychology Programme Research Director, Dr Fergal Jones, at <a href="mailto:fergal.jones@canterbury.ac.uk">fergal.jones@canterbury.ac.uk</a>.</p>
+			</section>
+
+			<section class="prose-section">
+				<h2>Full documentation</h2>
+				<p>The full participant information sheet is available on request from the lead researcher. Anyone considering taking part will be sent it before being asked to consent.</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

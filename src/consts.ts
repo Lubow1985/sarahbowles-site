@@ -1,17 +1,20 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
-export const SITE_TITLE = 'Sarah Bowles';
-export const SITE_DESCRIPTION = 'Doctoral research in clinical psychology at the Salomons Institute for Applied Psychology, Canterbury Christ Church University.';
+export const SITE_TITLE = 'Growth-Oriented Practice in Psychosis';
+export const SITE_DESCRIPTION = 'A doctoral research project at the Salomons Institute for Applied Psychology, Canterbury Christ Church University, exploring how mental health professionals can recognise and support growth following psychosis.';
 
 export const CV_URL = '';
 
 export const CONTACT = {
-  organization: 'Sarah Bowles',
+  organization: 'Growth-Oriented Practice in Psychosis',
   addressLines: [
-    'Salomons Institute for Applied Psychology',
-    'Canterbury Christ Church University',
+    'A doctoral research project at the Salomons Institute for Applied Psychology,',
+    'Canterbury Christ Church University.',
   ],
+  leadResearcher: 'Sarah Bowles',
+  leadEmail: 'sb2144@canterbury.ac.uk',
+  supervisors: 'Dr Anne Cooke · Dr Gerald Jordan',
   emails: [
     'sb2144@canterbury.ac.uk',
   ],

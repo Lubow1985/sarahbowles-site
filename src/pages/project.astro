@@ -1,0 +1,165 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+import { url } from '../utils/paths';
+---
+
+<!doctype html>
+<html lang="en-GB">
+	<head>
+		<BaseHead
+			title={`The Research Project — ${SITE_TITLE}`}
+			description="A doctoral research project exploring how mental health professionals understand and support growth following psychosis."
+		/>
+		<style>
+			.project-section {
+				max-width: 68ch;
+				margin-bottom: 1.5rem;
+				padding-bottom: 1rem;
+				border-bottom: 1px solid var(--color-border);
+			}
+			.project-section:last-of-type {
+				border-bottom: none;
+			}
+			.project-section h2 {
+				margin-top: 0;
+			}
+			.project-section p {
+				line-height: 1.75;
+				margin-bottom: 1.25rem;
+				color: var(--color-text-muted);
+			}
+			.project-section a {
+				color: var(--color-accent);
+			}
+			.research-questions {
+				list-style: none;
+				padding: 0;
+				margin: 0.75rem 0 1.25rem 0;
+			}
+			.research-questions li {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 1rem;
+				align-items: flex-start;
+				color: var(--color-text-muted);
+				line-height: 1.75;
+			}
+			.rq-num {
+				font-weight: 700;
+				color: var(--color-accent);
+				min-width: 1.5rem;
+				flex-shrink: 0;
+			}
+			.criteria-list {
+				list-style: disc;
+				padding-left: 1.5rem;
+				margin: 0.5rem 0 1.25rem 0;
+			}
+			.criteria-list li {
+				line-height: 1.75;
+				margin-bottom: 0.5rem;
+				color: var(--color-text-muted);
+			}
+			.poster-wrap {
+				margin: 2rem 0;
+				text-align: center;
+			}
+			.poster-wrap img {
+				max-width: 480px;
+				width: 100%;
+				border: 1px solid var(--color-border);
+				border-radius: var(--radius);
+				box-shadow: var(--shadow-md);
+			}
+			.poster-caption {
+				margin-top: 0.75rem;
+				font-size: 0.85rem;
+				color: var(--color-text-muted);
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<span class="page-eyebrow">The study</span>
+			<h1 class="page-title">Growth-Oriented Practice in Psychosis</h1>
+			<p class="page-strapline">A doctoral research project exploring how mental health professionals understand and support growth following psychosis.</p>
+
+			<section class="project-section">
+				<h2>Aim</h2>
+				<p>The aim of this study is to develop a model of growth-oriented practice in psychosis, grounded in the experience of mental health professionals who already work in this way.</p>
+				<p>The hope is that, in time, the model will help clinicians, services and trainees recognise, protect and actively support growth following psychosis as part of everyday clinical practice. The intention is not to displace work on distress, symptoms or risk. It is to give clinicians a clearer framework for the parts of their work that already, quietly, support people to grow.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>Why ask clinicians?</h2>
+				<p>Most of the research literature on positive change following psychosis has been conducted with people who have experienced psychosis themselves. Their accounts are central, and the field is right to have prioritised them.</p>
+				<p>Comparatively little work has asked clinicians how they understand growth and what they actively do to support it. Yet clinicians are often present for the slow, ordinary work of recovery and growth, and many have developed practice-based intuitions about what helps and what gets in the way. Articulating those intuitions, and where possible bringing them into conversation with theory and the wider literature, is the focus of this study.</p>
+				<p>A second reason for the focus on clinicians is practical. If growth-oriented practice is to become part of training, supervision and service design, it needs to be described in language clinicians use and recognise. Asking clinicians directly is the most direct route to that.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>Research questions</h2>
+				<p>From the perspectives of clinicians actively seeking to promote growth following psychosis:</p>
+				<ol class="research-questions">
+					<li><span class="rq-num">1.</span><span>What is their understanding of how growth can occur following psychosis?</span></li>
+					<li><span class="rq-num">2.</span><span>How does that understanding inform their clinical practice?</span></li>
+					<li><span class="rq-num">3.</span><span>What are the core elements of growth-oriented practice, and when should they be implemented?</span></li>
+					<li><span class="rq-num">4.</span><span>What cultural and ethical considerations shape growth-oriented practice?</span></li>
+				</ol>
+			</section>
+
+			<section class="project-section">
+				<h2>Approach: constructivist grounded theory</h2>
+				<p>The study uses a constructivist grounded theory approach (Charmaz, 2014). Grounded theory is a qualitative methodology designed for building theory directly from data rather than testing a hypothesis decided in advance. A constructivist version of it recognises that researcher and participant co-construct meaning in the course of the interview, and treats that co-construction as part of the work rather than as a problem to be controlled.</p>
+				<p>Two features of this approach matter for the present study. First, data collection and analysis run in parallel: each interview shapes the questions asked in the next, with the aim of building, refining and testing an emerging model of growth-oriented practice as the study progresses. Second, the researcher's standpoint is treated as part of the analytic process. The lead researcher is herself in clinical training, and her assumptions, hopes and uncertainties about this area of work are tracked reflexively throughout, with the help of regular research supervision.</p>
+				<p>The study expects to recruit between 12 and 20 participants, with the final sample size guided by conceptual depth rather than a pre-set target. Recruitment combines purposive sampling, snowball sampling, and direct invitations to clinicians whose published or training work suggests a fit with the study's focus.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>What the interviews cover</h2>
+				<p>Participants take part in a single online interview, lasting between 30 and 60 minutes, arranged at a time that suits them. Interviews are semi-structured: a topic guide gives shape to the conversation, while leaving room for participants to introduce ideas and emphases the researcher has not anticipated.</p>
+				<p>The interview covers participants' understanding of how growth occurs following psychosis, what they do in their clinical practice to support it, the challenges they encounter, and the cultural and ethical considerations they hold in mind. Participants are invited to draw on examples from their own clinical work; identifying details about clients are changed or removed by participants as they speak, and are further anonymised at transcription.</p>
+				<p>Interviews are recorded and transcribed through Microsoft Teams on Canterbury Christ Church University's secure systems. Transcripts are checked for accuracy against the recordings, identifying information is removed, and the original recordings are then deleted.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>Who can take part</h2>
+				<p>We are looking for mental health professionals who:</p>
+				<ul class="criteria-list">
+					<li>have at least one year's experience working with people who have experienced psychosis;</li>
+					<li>are aware that, for some people, experiences of psychosis can lead to learning and growth; and</li>
+					<li>actively aim to support clients not only to recover from psychosis but to learn and grow from it.</li>
+				</ul>
+				<p>There is no restriction on professional discipline. Clinical and counselling psychologists, psychiatrists, mental health nurses, social workers, occupational therapists, peer support workers and psychotherapists are all welcome to take part, as are clinicians from other disciplines whose work fits the criteria above.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>What taking part involves</h2>
+				<p>Before the interview, participants are sent a participant information sheet, a consent form and a short demographics questionnaire to complete online. The interview itself takes between 30 and 60 minutes and can be scheduled at a time that works for the participant.</p>
+				<p>Participants are free to withdraw at any point during the interview, and to withdraw their data from the study for up to two weeks after the interview, without giving any reason. A debrief is offered immediately after the interview, and participants can request a copy of the study's findings on completion.</p>
+			</section>
+
+			<section class="project-section">
+				<h2>Sharing the findings</h2>
+				<p>Findings will be written up as part of the lead researcher's doctoral thesis and prepared for publication in a peer-reviewed journal. The work is also intended to inform clinical training and service development, initially at the Salomons Institute and, in time, more widely.</p>
+				<p>Participants who would like a summary of the findings will receive one when the study is complete.</p>
+			</section>
+
+			<section class="project-section" id="get-in-touch">
+				<h2>Get in touch</h2>
+				<p>If you think you might be a fit and would like to find out more, please email the lead researcher, Sarah Bowles, at <a href="mailto:sb2144@canterbury.ac.uk">sb2144@canterbury.ac.uk</a>. You're welcome to ask questions before deciding whether to take part.</p>
+			</section>
+
+			<div class="poster-wrap">
+				<img src={url('/poster.png')} alt="Recruitment poster for the Growth-Oriented Practice in Psychosis study — Call for Participants" />
+				<p class="poster-caption">The study's recruitment poster.</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -9,6 +9,13 @@ import rehypeKatex from 'rehype-katex';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://sarahbowles.co.uk',
+	redirects: {
+		'/about': '/team',
+		'/contact': '/project#get-in-touch',
+		'/research': '/project',
+		'/research/growth-oriented-practice-in-psychosis': '/project',
+		'/projects': '/project',
+	},
 	integrations: [
 		mdx(),
 		sitemap()
